@@ -91,7 +91,7 @@ export default {
         .createUserWithEmailAndPassword(this.form.email, this.form.password)
         .then(data => {
           console.log("DATA => ", data);
-          this.$router.replace({ name: "GameDashboard" });
+          this.$router.replace({ name: "gameDashboard" });
         })
         .catch(err => {
           this.error = err.message;
